@@ -1,6 +1,9 @@
 import React from "react";
 import image from "./assets/image.jpg";
 import CarouselSlider from "./DiscoverCarousel";
+import sweater from './assets/sweater.jpg'
+import dress from './assets/dress.jpg'
+import shoes from './assets/pair-trainers.jpg'
 
 function Discover() {
   const carouselSettings = {
@@ -22,7 +25,7 @@ function Discover() {
             <p className="text-blue-500 cursor-pointer text-lg">view more</p>
           </div>
           <div className=" bg-white h-32 rounded shadow-md ">
-            {/* <CarouselSlider/> */}
+            <CarouselSlider/>
           </div>
         </div>
 
@@ -37,28 +40,28 @@ function Discover() {
             <div className="grid grid-cols-2 gap-3 mt-9">
               <div className="flex justify-center items-center ">
                 <img
-                  src={image}
+                  src={sweater}
                   alt="Image 1"
                   className="object-cover w-52 h-52 rounded rounded-2xl shadow-md"
                 />
               </div>
               <div className="flex justify-center items-center ">
                 <img
-                  src={image}
+                  src={dress}
                   alt="Image 1"
                   className="object-cover w-52 h-52 rounded rounded-2xl shadow-md"
                 />
               </div>
               <div className="flex justify-center items-center h-64">
                 <img
-                  src={image}
+                  src={dress}
                   alt="Image 1"
                   className="object-cover w-52 h-52 rounded rounded-2xl shadow-md"
                 />
               </div>
               <div className="flex justify-center items-center h-64">
                 <img
-                  src={image}
+                  src={shoes}
                   alt="Image 1"
                   className="object-cover w-52 h-52 rounded rounded-2xl shadow-md"
                 />
@@ -68,7 +71,7 @@ function Discover() {
           <div className="bg-white h-40 w-auto p-2 flex justify-between mt-6 rounded-2xl shadow-md">
             <div className="flex justify-center pl-4">
               <img
-                src={image}
+                src={sweater}
                 alt="Image 1"
                 className="w-36 h-36 rounded-2xl shadow-md "
               />
@@ -92,7 +95,7 @@ function Discover() {
             <div className="bg-white h-40 w-auto p-2 flex flex-row items-center   rounded-2xl shadow-md">
               <div className="px-6">
                 <img
-                  src={image}
+                  src={shoes}
                   alt="Image 1"
                   className="w-36 h-36 rounded-2xl shadow-md "
                 />
@@ -105,14 +108,14 @@ function Discover() {
           <div className="bg-white h-[36rem] mt-9 rounded-2xl  items-center">
             <div className="text-2xl mb-4 p-5">
               {" "}
-              {/* Added margin-bottom to create space below the heading */}
+             
               <h1>Deals on best sellers</h1>
             </div>
             <div className="rounded-4xl">
               {" "}
-              {/* Allow the image to center in the remaining space */}
+             
               <img
-                src={image}
+                src={dress}
                 alt="Image 1"
                 className=" p-2 w-[28rem] h- h-[28rem]  rounded-4xl object-cover"
               />

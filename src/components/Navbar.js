@@ -1,6 +1,9 @@
 // src/App.js
 import React from "react";
-import image from "./assets/image.jpg";
+import image from "./assets/image1.jpg";
+import playstore from './assets/app store.png'
+import googleplay from './assets/google play.png'
+import qr from './assets/Screenshot (160).png'
 
 function Navbar() {
   return (
@@ -8,10 +11,10 @@ function Navbar() {
       <div
         className="h-[45rem] bg-cover bg-center"
         style={{
-          backgroundImage: `url(${image})`, // Use the imported image here
+          backgroundImage: `url(${image})`, 
         }}
       >
-        {/* Navbar */}
+      
         <nav className="fixed  top-0 left-0 w-full">
           <div className="mx-auto sm:px-6 lg:px-8">
             <div className="flex justify-between items-start h-16">
@@ -20,20 +23,21 @@ function Navbar() {
 
                 <div className="flex items-start space-x-5 ">
                   <span className="text-lg text-white">All Categories</span>
-                  <div className="relative group">
+
+                  <div className="relative group z-50">
                     <button
                       id="mega-menu-full-cta-dropdown-button"
-                      className="flex items-center justify-between py-2 px-3 font-medium text-gray-900 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                      className="text-white"
                     >
-                      featured selection
+                      Featured selection
                     </button>
                     <div
                       id="mega-menu-full-cta-dropdown"
-                      className="hidden group-hover:block absolute left-0 bg-white text-black border border-gray-200 shadow-lg dark:border-gray-600 w-[70rem] rounded-lg p-6"
+                      className="hidden group-hover:block w-screen transform  absolute  h-auto bg-white text-black border border-gray-200 shadow-lg dark:border-gray-600 rounded-lg p-6   z-50 translate-x-0 transition-transform group-hover:translate-x-[-10rem] duration-500 ease-in-out"
                     >
-                      <div className="grid grid-cols-4 items-center gap-7 text-lg">
+                      <div className="grid grid-cols-5 items-center  p-8 text-lg z-50">
                         {/* Column 1 with a box */}
-                        <div className="flex items-center flex-col justify-center border border-gray-300 w-60 h-32 rounded-lg">
+                        <div className="flex items-center flex-col justify-center border border-gray-300 w-64 h-40 rounded-lg">
                           <svg
                             className="w-8 h-8 mb-2 text-gray-500" // Adjust size and color
                             fill="none"
@@ -51,8 +55,8 @@ function Navbar() {
                           <h1 className="text-center">Top Ranking</h1>
                         </div>
 
-                        {/* Column 2 with a box */}
-                        <div className="flex items-center flex-col justify-center border border-gray-300 w-60 h-32 rounded-lg">
+                      
+                        <div className="flex items-center flex-col justify-center border border-gray-300 w-64 h-40 rounded-lg">
                           <svg
                             className="w-8 h-8 mb-2 text-gray-500"
                             fill="none"
@@ -70,7 +74,7 @@ function Navbar() {
                           <h1 className="text-center">New arrival</h1>
                         </div>
 
-                        <div className="flex items-center flex-col justify-center border border-gray-300 w-60 h-32 rounded-lg">
+                        <div className="flex items-center flex-col justify-center border border-gray-300 w-64 h-40 rounded-lg">
                           <svg
                             className="w-8 h-8 mb-2 text-gray-500"
                             fill="none"
@@ -87,10 +91,10 @@ function Navbar() {
                           </svg>
                           <h1 className="text-center">Saving spotlight</h1>
                         </div>
-
-                        {/* Column 3 */}
+                        <div className="h-36 border-l border-gray-300 "></div>
+                       
                         <div>
-                          <ul className="space-y-4">
+                          <ul className="space-y-4 mt-9">
                             <li>sample centre</li>
                             <li>Online Trade show</li>
                             <li>Tips</li>
@@ -102,26 +106,169 @@ function Navbar() {
                     </div>
                   </div>
 
-                  <div className="relative group">
+                  <div className="relative group z-50">
                     <button
                       id="mega-menu-full-cta-dropdown-button"
-                      className="flex items-center justify-between py-2 px-3 font-medium text-gray-900 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                      className="text-white"
                     >
                       Trade Assurance
                     </button>
                     <div
                       id="mega-menu-full-cta-dropdown"
-                      className="hidden group-hover:block absolute left-0 h-[20rem] bg-white text-black border border-gray-200 shadow-lg dark:border-gray-600 w-[70rem] rounded-lg p-6"
+                      className="hidden group-hover:block w-screen transform  absolute  h-auto bg-white text-black border border-gray-200 shadow-lg dark:border-gray-600 rounded-lg p-6 z-0  z-50 translate-x-0 transition-transform group-hover:translate-x-[-20rem] duration-500 ease-in-out"
                     >
-                      <div className="grid grid-cols-2 p-9 items-center  text-lg">
-                        <div className="flex flex-col items-start  justify-center">
+                      <div className="grid grid-cols-2 p-9 items-center text-lg">
+                      
+                        <div className="flex flex-col items-start justify-center">
                           <h1 className="text-center">Trade Assurance</h1>
                           <p className="text-4xl">
                             Enjoy protection from payment to delivery.
                           </p>
-                          <button className="bg-orange-500 rounded-3xl h-8 w-40 mt-9 ">
+                          <button className="bg-orange-500 rounded-3xl h-8 w-40 mt-9">
                             Learn more
                           </button>
+                        </div>
+
+                        
+                        <div className="grid grid-cols-2 gap-4">
+                          <div className="flex flex-row gap-7 bg-gray-300 items-center justify-center border border-gray-300 h-32 rounded-lg">
+                            <svg
+                              class="h-14 w-14  bg-orange-300 rounded-full bg-[rgba(255,255,255,0.05)] shadow-2xl p-2 hover:text-orange-500 transition-colors duration-300 "
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              stroke-width="2"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              {" "}
+                              <path stroke="none" d="M0 0h24v24H0z" />{" "}
+                              <path d="M9 12l2 2l4 -4" />{" "}
+                              <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
+                            </svg>
+                            <h2 className="text-center">
+                              safe and Easy payments
+                            </h2>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={1.5}
+                              stroke="currentColor"
+                              className="size-6"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                              />
+                            </svg>
+                          </div>
+                          <div className="flex items-center gap-7 bg-gray-300 justify-center border border-gray-300 h-32 rounded-lg">
+                            <svg
+                              class="h-14 w-14 rounded-full  bg-orange-300 bg-[rgba(255,255,255,0.05)] shadow-2xl p-2 hover:text-orange-500 transition-colors duration-300 "
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              stroke-width="2"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              {" "}
+                              <path stroke="none" d="M0 0h24v24H0z" />{" "}
+                              <path d="M9 12l2 2l4 -4" />{" "}
+                              <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
+                            </svg>
+                            <h2 className="text-center">Monye back policy</h2>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={1.5}
+                              stroke="currentColor"
+                              className="size-6"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                              />
+                            </svg>
+                          </div>
+                          <div className="flex items-center gap-7 bg-gray-300 justify-center border border-gray-300 h-32 rounded-lg">
+                            <svg
+                              class="h-14 w-14 rounded-full bg-orange-300  bg-[rgba(255,255,255,0.05)] shadow-2xl p-2 hover:text-orange-500 transition-colors duration-300 "
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              stroke-width="2"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              {" "}
+                              <path stroke="none" d="M0 0h24v24H0z" />{" "}
+                              <path d="M9 12l2 2l4 -4" />{" "}
+                              <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
+                            </svg>
+                            <h2 className="text-center">
+                              Shippng & logistics services
+                            </h2>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={1.5}
+                              stroke="currentColor"
+                              className="size-6"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                              />
+                            </svg>
+                          </div>
+                          <div className="flex items-center gap-7 bg-gray-300 justify-center border border-gray-300 h-32 rounded-lg">
+                            <svg
+                              class="h-14 w-14 rounded-full bg-orange-300 bg-[rgba(255,255,255,0.05)] shadow-2xl p-2 hover:text-orange-500 transition-colors duration-300 "
+                              width="14"
+                              height="14"
+                              viewBox="0 0 24 24"
+                              stroke-width="2"
+                              stroke="currentColor"
+                              fill="none"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            >
+                              {" "}
+                              <path stroke="none" d="M0 0h24v24H0z" />{" "}
+                              <path d="M9 12l2 2l4 -4" />{" "}
+                              <path d="M12 3a12 12 0 0 0 8.5 3a12 12 0 0 1 -8.5 15a12 12 0 0 1 -8.5 -15a12 12 0 0 0 8.5 -3" />
+                            </svg>
+                            <h2 className="text-center">
+                              After sales protection
+                            </h2>
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              strokeWidth={1.5}
+                              stroke="currentColor"
+                              className="size-6"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                              />
+                            </svg>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -129,7 +276,7 @@ function Navbar() {
                 </div>
               </div>
               <div className="flex flex-col items-start">
-                {/* First Row */}
+               
                 <div className="flex items-center text-xl space-x-6 mb-3">
                   <span className="text-lg text-white">Deliver to</span>
                   <span className="text-lg text-white">English USD</span>
@@ -143,61 +290,60 @@ function Navbar() {
                   <div className="relative group">
                     <button
                       id="mega-menu-full-cta-dropdown-button"
-                      className="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700 "
+                      className="text-white "
                     >
                       Buyer Central
                     </button>
                     <div
-                      id="mega-menu-full-cta-dropdown"
-                      className="hidden group-hover:block absolute right-0 h-auto bg-white text-black border border-gray-200 shadow-lg dark:border-gray-600 w-[80rem] rounded-lg p-6  z-0 translate-x-0 transition-transform group-hover:translate-x-[12rem] duration-500 ease-in-out rounded-sm"
+                      id="mega-menu-full-cta-dropdown-button"
+                      className=" hidden group-hover:block w-screen transform   absolute right-0 h-auto bg-white text-black border border-gray-200 shadow-lg dark:border-gray-600 rounded-lg p-6  z-50 translate-x-0  group-hover:translate-x-[27rem]  transition-all duration-200 ease-in-out opacity-0 invisible group-hover:opacity-100 group-hover:visible"
                     >
-                      <div className="grid grid-cols-5 gap-20 text-lg">
-                        {/* Column 1 */}
-                        <div>
-                          <ul className="space-y-4">
-                            <li>
-                              <a
-                                href="#"
-                                className="hover:underline hover:text-blue-600"
-                              >
-                                Get Started
-                              </a>
-                            </li>
-                            <li>
-                              <a
-                                href="#"
-                                className="hover:underline hover:text-blue-600"
-                              >
-                                Why Alibaba.com
-                              </a>
-                            </li>
-                          </ul>
-                        </div>
+                      <div className="grid grid-cols-5 gap-6 p-9 text-lg">
+                        <ul className="space-y-4">
+                          <li>
+                            <a
+                              href="#"
+                              className="hover:underline hover:text-blue-600 text-black font-bold text-base"
+                            >
+                              Get Started
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              className="hover:underline hover:text-blue-600 pb-9"
+                            >
+                              Why Alibaba.com
+                            </a>
+                          </li>
+                        </ul>
 
-                        {/* Column 2 */}
+                        
                         <div>
                           <ul className="space-y-4">
-                            <li>Why Alibaba.com</li>
+                            <li className="font-bold ">Why Alibaba.com</li>
                             <li>How sourcing works</li>
                             <li>Membership program</li>
                           </ul>
                         </div>
 
-                        {/* Column 3 */}
+                       
                         <div>
-                          <ul className="space-y-4 ">
-                            <li>Trade services</li>
+                          <ul className="space-y-4  z-50">
+                            <li className="font-bold ">Trade services</li>
                             <li>Trade Assurance</li>
                             <li>Logistics services</li>
                             <li>Letter of credit</li>
-                            <li>Production monitoring & inspection services</li>
+                            <li className="z-50">
+                              Production monitoring & inspection services
+                            </li>
                           </ul>
                         </div>
 
                         {/* Column 4 */}
                         <div>
                           <ul className="space-y-4">
-                            <li>Resources</li>
+                            <li className="font-bold ">Resources</li>
                             <li>Success stories</li>
                             <li>Blogs</li>
                             <li>Industry reports</li>
@@ -208,7 +354,7 @@ function Navbar() {
                         {/* Column 5 */}
                         <div>
                           <ul className="space-y-4">
-                            <li>Webinars</li>
+                            <li className="font-bold ">Webinars</li>
                             <li>Overview</li>
                             <li>Meet the peers</li>
                             <li>Ecommerce Academy</li>
@@ -223,31 +369,32 @@ function Navbar() {
                   <div className="relative group">
                     <button
                       id="mega-menu-full-cta-dropdown-button"
-                      className="flex items-center justify-between py-2 px-3 font-medium text-gray-900 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                      className="text-white text-1xl"
                     >
                       Help Center
                     </button>
                     <div
                       id="mega-menu-full-cta-dropdown"
-                      className="hidden group-hover:block absolute right-0 bg-white text-black border border-gray-200 shadow-lg dark:border-gray-600 w-[70rem] rounded-lg p-6"
+                      className="hidden group-hover:block w-screen transform absolute right-0 h-auto bg-white text-black border border-gray-200 shadow-lg dark:border-gray-600 rounded-lg p-6 z-5 translate-x-0  group-hover:translate-x-[20rem] duration-300 ease-in-out  translate-y-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible  group-hover:transform6 z-50 transition-all "
                     >
-                      <div className="grid grid-cols-3 items-center gap-7 text-lg">
-                        {/* Column 1 with a box */}
-                        <div className="flex items-center justify-center border border-gray-300 w-48 h-32 rounded-lg">
+                      <div className="grid grid-cols-4 place-items-center  justify-items-center p-10 text-lg ">
+                      
+                        <div className="flex items-center justify-center border border-gray-300 w-64 h-32 rounded-lg ml-9">
                           <h1 className="text-center">For Buyers</h1>
                         </div>
 
-                        {/* Column 2 with a box */}
-                        <div className="flex items-center justify-center border border-gray-300 w-48 h-32 rounded-lg">
+                        
+                        <div className="flex items-center justify-center border border-gray-300 w-64 h-32 rounded-lg">
                           <h1 className="text-center">For Suppliers</h1>
                         </div>
 
-                        {/* Column 3 */}
+                        <div className="h-32 border-l border-gray-300 mx-4"></div>
+                        
                         <div>
                           <ul className="space-y-4">
-                            <li>Why Alibaba.com</li>
-                            <li>How sourcing works</li>
-                            <li>Membership program</li>
+                            <li>open a dispute</li>
+                            <li>Report IPR Infringement</li>
+                            <li>Report Abuse</li>
                           </ul>
                         </div>
                       </div>
@@ -257,18 +404,18 @@ function Navbar() {
                   <div className="relative group">
                     <button
                       id="mega-menu-full-cta-dropdown-button"
-                      className="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-blue-500 md:dark:hover:bg-transparent dark:border-gray-700"
+                      className="text-white text-1xl"
                     >
                       Get the app
                     </button>
                     <div
                       id="mega-menu-full-cta-dropdown"
-                      className="hidden group-hover:block absolute right-0 h-auto bg-white text-black border border-gray-200 shadow-lg dark:border-gray-600 w-[70rem] rounded-lg p-6"
+                      className="hidden group-hover:block w-screen transform  absolute right-0 h-auto bg-white text-black border border-gray-200 shadow-lg dark:border-gray-600 rounded-lg p-6  z-5 translate-x-0  group-hover:translate-x-[13rem] 6 z-50 transition-all duration-300 ease-in-out opacity-0 invisible group-hover:opacity-100 group-hover:visible"
                     >
-                      <div className="grid grid-cols-3 items-center gap-7 text-lg">
-                        {/* First Grid: Centered Text */}
-                        <div className="flex flex-col items-start">
-                          <h1 className="font-semibold text-xl">
+                      <div className="grid grid-cols-3   place-items-center  justify-items-center items-center p-10 text-lg">
+                        
+                        <div className="flex flex-col items-start ml-2 -mr-2">
+                          <h1 className=" font-bold text-3xl mr-20">
                             Get the Alibaba.com APP
                           </h1>
                           <p className="mt-2">
@@ -281,26 +428,26 @@ function Navbar() {
                           </p>
                         </div>
 
-                        {/* Second Grid: App Store and Google Play Images */}
-                        <div className="flex justify-center items-center">
-                          <div className="flex flex-col space-y-5 space-x-4">
+                       
+                        <div className="flex justify-center items-center ml-2 -mr-2">
+                          <div className="flex flex-col space-y-5 ">
                             <img
-                              src="https://via.placeholder.com/120x40?text=App+Store"
+                              src={playstore}
                               alt="App Store"
-                              className="h-auto"
+                              className="h-16 w-48 ml-5"
                             />
                             <img
-                              src="https://via.placeholder.com/120x40?text=Google+Play"
+                              src={googleplay}
                               alt="Google Play"
-                              className="h-auto"
+                              className="h-16 w-48 ml-4"
                             />
                           </div>
                         </div>
 
-                        {/* Third Grid: Sample QR Code */}
-                        <div className="flex justify-center items-center">
+                        
+                        <div className="flex justify-center items-center ml-2 -mr-2">
                           <img
-                            src="https://via.placeholder.com/150"
+                            src={qr}
                             alt="Sample QR Code"
                             className="h-auto"
                           />
@@ -320,7 +467,7 @@ function Navbar() {
         </nav>
 
         <div className="absolute items-start justify-center mt-56 px-7">
-          <h1 className="text-xl text-white">Learn about Alibaba.com</h1>
+          <h1 className="text-xl  text-white">Learn about Alibaba.com</h1>
           <h1 className="text-5xl font-bold text-white mt-10">
             The leading B2B ecommerce platform for <br />
             global trade
@@ -331,9 +478,9 @@ function Navbar() {
                 type="text"
                 placeholder="Search tent pegs"
                 className="w-full h-16 py-2 pl-10 pr-20 border rounded-full focus:outline-none"
-                style={{ borderRadius: "50px" }} // Custom rounded corners
+                style={{ borderRadius: "50px" }} 
               />
-              {/* Search Icon with Orange Background */}
+              
               <button className="absolute right-2 top-1 h-14 flex items-center justify-center bg-orange-500 text-white rounded-full py-1 px-10 hover:bg-green-600 transition duration-300">
                 <svg
                   className="w-4 h-4"
@@ -370,7 +517,7 @@ function Navbar() {
       </div>
 
       <div className="bg-amber-950 h-[35rem] flex  items-center justify-center">
-        {/* Container for boxes */}
+       
         <div className="grid grid-cols-4 gap-7 mt-7 ">
           <div className="bg-[rgba(255,255,255,0.05)] shadow-xl  text-white p-10 w-[22rem]  h-[23rem]   rounded-3xl flex flex-col text-start  transition-colors duration-75 hover:bg-[rgba(255,255,255,0.1)]">
             <div>
