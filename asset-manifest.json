@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Alibaba_Project/static/css/main.fb780443.css",
-    "main.js": "/Alibaba_Project/static/js/main.bce95b4e.js",
+    "main.js": "/Alibaba_Project/static/js/main.a14b93eb.js",
     "static/js/453.a14782d0.chunk.js": "/Alibaba_Project/static/js/453.a14782d0.chunk.js",
     "static/media/pair-trainers.jpg": "/Alibaba_Project/static/media/pair-trainers.0fb8cbdc58c7127e8c32.jpg",
     "static/media/sweater.jpg": "/Alibaba_Project/static/media/sweater.c5444a5ef280278bd6eb.jpg",
@@ -9,11 +9,11 @@
     "static/media/dress.jpg": "/Alibaba_Project/static/media/dress.d06876bee5bcc31ce7b4.jpg",
     "index.html": "/Alibaba_Project/index.html",
     "main.fb780443.css.map": "/Alibaba_Project/static/css/main.fb780443.css.map",
-    "main.bce95b4e.js.map": "/Alibaba_Project/static/js/main.bce95b4e.js.map",
+    "main.a14b93eb.js.map": "/Alibaba_Project/static/js/main.a14b93eb.js.map",
     "453.a14782d0.chunk.js.map": "/Alibaba_Project/static/js/453.a14782d0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fb780443.css",
-    "static/js/main.bce95b4e.js"
+    "static/js/main.a14b93eb.js"
   ]
 }
