@@ -276,7 +276,7 @@ export default function Navbar() {
           <button className="bg-orange-500 text-white py-1 px-4 rounded-full hover:bg-green-600 transition duration-300">
             Sign up
           </button>
-          <div className="relative hidden group">
+          <div className="relative lg:hidden group">
             <button
               id="mega-menu-full-cta-dropdown-button"
               className="text-white "
@@ -353,7 +353,7 @@ export default function Navbar() {
           </div>
 
          
-          <div className="relative group hidden ">
+          <div className="relative group lg:hidden ">
             <button
               id="mega-menu-full-cta-dropdown-button"
               className="text-white text-1xl"
@@ -386,7 +386,7 @@ export default function Navbar() {
             </div>
           </div>
 
-          <div className="relative group hidden ">
+          <div className="relative group lg:hidden ">
             <button
               id="mega-menu-full-cta-dropdown-button"
               className="text-white text-1xl"
